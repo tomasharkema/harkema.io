@@ -1,1 +1,108 @@
 /* CSS declarations go here */
+
+* {
+	padding:0;
+	margin:0;
+	font-weight: 100;
+}
+
+html {
+	font-family: helvetica;
+	-webkit-font-smoothing: antialiased;
+	background-color: #000;
+	color:#FFF;
+}
+
+/* HEADER */
+.header {
+	height: 100vh;
+	width: 100vw;
+	background-color: #999;
+	background-image: url("https://farm4.staticflickr.com/3728/9439536254_7eeed0721e_k.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	box-shadow: 0px 0px 200px 20px #000 inset;
+
+	-webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+.header header {
+	background-image: url(http://tomasharkema.nl/static/img/grind.png);
+	width: 100vw;
+	height: 100vh;
+}
+
+.header h1 {
+	font-family: consolas;
+	text-shadow:0px 0px 0.5em #000;
+	padding:1em;
+	padding-bottom:0;
+	-webkit-animation: headerMove 2s;
+  animation: headerMove 2s;
+}
+
+.header h1:before {
+	content:"> ";
+}
+
+.header h2 {
+	font-family: consolas;
+	text-shadow:0px 0px 0.5em #000;
+	padding:1em;
+	padding-top:0;
+}
+
+.header h2:before {
+	content:"> ";
+}
+
+.header h2:after {
+	content:"_";
+		-webkit-animation: fadeIn 0.75s infinite;
+  animation: fadeIn 0.75s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes headerMove {
+    from {
+    	padding-top: 49vh;
+    }
+    to {
+    	padding-top: 1em;
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes headerMove {
+    from {
+    	padding-top: 49vh;
+    }
+    to {
+    	padding-top: 1em;
+    }
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes fadeIn {
+    from {
+    	opacity: 0;
+    }
+    to {
+    	opacity: 1;
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes fadeIn {
+    from {
+    	opacity: 0;
+    }
+    to {
+    	opacity: 1;
+    }
+}
+
+
